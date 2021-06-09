@@ -1,0 +1,10 @@
+*.ptau
+*.r1cs
+*.sym
+*.wasm
+*.wtns
+*.zkey
+proof.json
+public.json
+verification_key.json
+build/
