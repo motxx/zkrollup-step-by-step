@@ -8,7 +8,7 @@ if [ $# -ne 2 ]; then
 fi
 
 circom_name=$1
-input_name=$2
+input_filename=$2
 
-snarkjs wtns calculate ${circom_name}.wasm input.json witness.wtns
+snarkjs wtns calculate ${circom_name}.wasm ${input_filename} witness.wtns
 snarkjs groth16 prove ${circom_name}_final.zkey witness.wtns proof.json public.json
